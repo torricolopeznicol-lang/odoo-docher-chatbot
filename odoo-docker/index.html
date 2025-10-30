@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Asistente Inteligente - Chatbot Educativo</title>
+
+  <!-- Cargar primero el script del messenger -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <style>
+    body { font-family: Roboto, Arial, sans-serif; padding: 1rem; }
+  </style>
 </head>
 <body>
   <h2>Bienvenido/a al Asistente Inteligente ☁️</h2>
   <p>Puedes conversar con el chatbot para abrir tus módulos de Classroom, ver tus tareas o consultar información del curso.</p>
 
-  <!-- Aquí está tu widget de Dialogflow con tu agente -->
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <!-- df-messenger: revisa que agent-id sea EXACTO -->
   <df-messenger
     chat-title="Asistente Inteligente"
     agent-id="asistenteinteligente-majf"
